@@ -25,8 +25,8 @@ Sync the fork of a repository to keep it up to date with the upstream repository
 click on sync fork
 From web UI: 
 1. Navigate to the main page of the forked repository on GitHub
-2. Select Sync Fork dropdown menu
-3. Review the details about the commits from the upstream repository and then click Update branch
+2. Select "Sync Fork" dropdown menu
+3. Review the details about the commits from the upstream repository and then click "Update branch"
 
 
 From GitHub CLI: 
@@ -102,7 +102,8 @@ From the Web UI:
 2. Or to create a repository with the directory structure and files of an existing repository, select the choose a template dropdown menu and click a temporate repository (owned by you or organizations you are a member of, or ones you've used before).
    a. To create a template repository, create a repository, then navigate to its main page, then under the repository name click settings (can be found underneath the dropdown menu), and select template repository
    b. You can choose to include the directory structure and files from only the default branch of the template repository or to include all branches. Branches createed from a template have unrelated histories, which means you cannot create pull requests or merge between the branches.
-   c. TO create a repository from a tempplate, nagivate to the main page of the repository, click use this template above the file list, and select create a new repository, select the account you want to own the repository and name it, choose its visibility or select Include all branches, or any apps to use. Then click on Create Repository from Template.
-3. 
+   c. TO create a repository from a tempplate, nagivate to the main page of the repository, click use this template above the file list, and select create a new repository, select the account you want to own the repository and name it, choose its visibility or select Include all branches, or any apps to use. Then click on "Create Repository from Template".
+3. If you want to include the directory structure and files from all branches in the template, select "Include all Branches"
+4. 
 
 Deleting a repository:
