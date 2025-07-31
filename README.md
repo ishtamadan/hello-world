@@ -49,4 +49,14 @@ GitHub CLI brings GITHUB to an individual's computer/terminal so they can do all
 
 Create a pull request from a fork: 
 hint. if the pull request compares the topic branch with a branch in the upstream repository as the base branch, then the topic branch is called the compare branch or pull request
-1. 
+The topic branch, aka the feature branch, is the branch where one is making the forked changes
+The base branch is the branch in the central repository that you want to make changes into
+The pull request compares the changes proposed by the topic branch with the base branch (known as compare branches)
+1. Navigate to the original repository where you created the fork
+2. Above the list of files, there is a yellow banner. Click compare and pull request to create a request for the associated branch
+3. On the page to create a new pull request, click compare across forks
+4. In the "base branch" dropdown menu, select the branch of the upstream repository you'd like to merge changes into
+5. in the head fork dropdown menu, select your fork, then use the compare branch dropdown menu to slect the branch you made your changes in
+6. Type a title and description for your pull request
+7. On user-owned forks, select "Allow edits from maintainers" to allow anyone to have push access to the upstream repository
+8. To create pull request that is ready for review, create pull request. to create a draft pull request, use the drop-down and select "Create Draft Pull Request", then click "Draft Pull Request". If you are the member of an organization, you may need to request access to pull requests from an organization owner
