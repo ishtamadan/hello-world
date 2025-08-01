@@ -104,6 +104,39 @@ From the Web UI:
    b. You can choose to include the directory structure and files from only the default branch of the template repository or to include all branches. Branches createed from a template have unrelated histories, which means you cannot create pull requests or merge between the branches.
    c. TO create a repository from a tempplate, nagivate to the main page of the repository, click use this template above the file list, and select create a new repository, select the account you want to own the repository and name it, choose its visibility or select Include all branches, or any apps to use. Then click on "Create Repository from Template".
 3. If you want to include the directory structure and files from all branches in the template, select "Include all Branches"
-4. 
+4. Use the "Owner" dropdown menu to select the account you want to own the repository, type a name for the repository and then choose its visiblity
+5. Can create a README, whihc is a document describing the project or a .gitignore file, which is a set of ignore rules (which files and directories to ignore when you make a commit, create it with the "touch .gitignore" command, or to ignore a file that is already checked in, use "git rm --cached FILENAME"). You can also ignore a certain file or directory by adding it to a certain file named ignore inside the directory ~/.config/git, or open the file called .git/info/exclude
+6. Select apps to be used in the repository
+7. Click "Create Repository"
+8. Then at the bottom of the resulting Quick Setup page, under "Import from an old repository", choose to import a project to the new repository by clicking "Import code"
+
+Create a new repository from a URL query
+- name = name w/ spaces replaced w/ + or %20
+- descripton = string w/ spaces replaced with + or %20
+- visibility=private or visibility=public
+- owner=name of organization or username or (@me if signed in)
+- specify who owns the template and the name of the template with template_owner and template_name
 
 Deleting a repository:
+1. On GitHub, navigate to the main page of the repository
+2. Under the repository name, click on the settings button. then select the dropdown menu and then click settings
+3. On the "General" settings page, scroll down to the "Danger zone" and click "Delete this repository"
+4. Read the warnings and click "I have read and understand these effects"
+5. Read the warnings and click "I have read and understand these effects"
+6. Type in the name of the repository you want to delete in the text box
+7. Click "Delete this repository"
+
+Restoring a deleted Repository:
+1. In the upper-right corner of any page on GitHub, click the profile picture and then click on "Settings"
+2. In the "Code planning and automation" section of the sidebar, click on "Repositories"
+3. Then click on "Deleted Repositories"
+4. then click "Restore" next to the repository you want to restore
+5. Read the warning and then click "I understand, restore this repository"
+
+To add new files to the project's repository:
+1. TO the right of the page, select the "Add file" dropdown menu
+2. From the dropdown menu, click "Upload files"
+3. On the computer, open the folder with all the work, and then drag and drop all files and folders into the browser
+4. At the bottom of the page, under "Commit changes", select "Commit directly to the main branch", and then click "Commit changes"
+
+Adding locally hosted code to GitHub:
