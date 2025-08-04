@@ -140,3 +140,33 @@ To add new files to the project's repository:
 4. At the bottom of the page, under "Commit changes", select "Commit directly to the main branch", and then click "Commit changes"
 
 Adding locally hosted code to GitHub:
+Initialize a Git repository with: 
+1. Open the terminal
+2. Navigate to the root directory of the project
+3. Initialize the local directory as a Git repository (git init -b to set the name of the default branch)
+4. git add . to add the files in the new local repository
+5. Commit the files that have been staged in the local repository
+Then push the repository to github
+CLI: gh repo create, then select "push an existing local repository to github" and enter the desired name. Follow the interactive prompts and then confirm yes when asked to add the remote and push the commits to the current branch
+Git:
+1. Create a new repository on GitHub
+2. Click the double sqaures logo on the Quick Setup page to copy the remote repository URL
+3. Open Terminal
+4. Change the current working directory to the local project
+5. git remote add origin (full URL of the repository in github)
+6. run git remote -v to ensure that the remote URL was set correctly
+7. git push -u origin main to push the changes in the local repository to GitHub
+
+Creating and Pushing an R-Markdown Document to GitHub (including graphs)
+1. Go to github
+2. Create new repository (don't need to initialize with the readme, whihc can be added later)
+3. Go to R studio > file > new project > version control > Git
+4. Ctrl+V repository URL from GitHub, File > New > Markdown> enter title, etc
+5. change output = html_document to output = github_document
+6. Knit the file, it will have saved as Title.rproj, Title.rmd, Title.md if saved as Title.md
+7. Allows the code to be rendered when pushed as igt
+8. Check the box to stagre Title.md, not .rmd, click "commit", add comment, click the green arrow to push to GitHub, go to gitHub, refresh the repository, and the markdown document with rendered code will be there
+
+If the document includes graphs: 
+when knitted, a new file will save to the Git window called title.docs
+When you commit, check the box to stage the .docs in addition to the .md document, which will commit the graphs as a separate file to the repository, although the graphics will automatically pull into the markdown document when rendered
